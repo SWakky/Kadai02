@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/ivface.png">
+    <title>イーブイなににしんかするかな？</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <audio preload="auto" controls autoplay loop>
+      <source src="image/進化.wav" />
+    </audio> -->
+  </head>
+  <body>
+    <!-- ここにはhtmlを記述 -->
+    <!-- <h1>dev23 js01回目</h1>
+    <button class="a">クリック</button> -->
+    <!-- ここにはhtmlを記述 -->
+
+    <header class="header">
+        <!-- モンスターボールとイーブイタイトル入れる -->
+          <!-- <div class="headiv">
+            <img src="image/iv.png" alt="イーブイ顔">
+          </div> -->
+        <div class="title">
+          <h1>
+              もしもイーブイ！？　しんか　おえかきゲーム
+          </h1>
+        </div>
+        <!-- <img src="image/monsterball.jpg" alt="モンスターボール"> -->
+    </header>
+
+    <main>
+      
+
+      </div>
+
+        <!-- 最初の説明パート -->
+        <div class="setumei">
+          <p>
+          イーブイは　くらす　ところや<br>
+          トレーナーと　なかよくすることで<br>
+          みためが　かわる　ふしぎな　ポケモンだよ
+          </p>
+        </div>
+        <div class="setumei2">
+          <p>  
+          どんな　すがたが　あるか　みてみよう！
+          </p>
+        </div>
+        <!-- 説明パート終わり -->
+
+        <!-- イーブイズ配置とクリックでトップの画像変更 -->
+        <div class="zukanblock">
+          <div class="jouhou">
+            <img src="image/zukan1.png" alt="" style="max-width: 100%;">
+          </div>
+        </div>
+        <!-- ボタン開始 -->
+        <div class="zukan">
+          <div class="ziv">
+            <button class="zbtn">
+              <img src="image/iv.png" alt="イーブイ" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zsha">
+            <button class="zbtna">
+              <img src="image/shawa.png" alt="シャワーズ" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zsan">
+            <button class="zbtnb">
+              <img src="image/san.png" alt="サンダース" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zboo">
+            <button class="zbtnc">
+              <img src="image/boo.png" alt="ブースター" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zei">
+            <button class="zbtnd">
+              <img src="image/ei.png" alt="エーフィー" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zbr">
+            <button class="zbtne">
+              <img src="image/bra.png" alt="ブラッキー" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zleaf">
+            <button class="zbtnf">
+              <img src="image/leaf.png" alt="リーフィー" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="zgray">
+            <button class="zbtng">
+              <img src="image/gray.png" alt="グライシア" style="width: 70px;">
+            </button>
+          </div>
+
+          <div class="znin">
+            <button class="zbtnh">
+              <img src="image/nin.png" alt="ニンフィア" style="width: 70px;">
+            </button>
+          </div>
+        </div>
+
+        <!-- ボタン終了 -->
+
+        <!-- トップ画像パート終わり -->
+
+        <!-- イーブイたちのお引越し画像流れる -->
+        <!-- お引越し終わり -->
+
+        <!-- 引っ越し導入説明 -->
+        <div class="hikkoshi">
+          <img src="image/hikkoshi.png"><img src="image/hikkoshi2.png">
+        </div>
+          <p class="setumei">
+            おや？　イーブイが　すむ　ばしょを　かえるみたいだよ？<br>
+            どこに　おひっこし　したのか　ボタンを　おして　みてみよう！
+          </p>
+        <!-- 説明終わり -->
+
+        <!-- 引っ越し判定ボタンと画像入れ替え、テキスト出現 -->
+
+        <button class="btn">ボタン</button>
+
+        
+        <div class="randomtext">
+          <h2>おひっこし　した　ばしょは・・・？</h2>
+        </div>
+
+          <div class="randomhaikei" style="height: 400px; display: flex; justify-content: center; align-items: center;">
+            <div class="none">
+              <img srcset="image/ivgif.gif" alt="GIF">
+            </div>
+          </div>
+
+        <div class="setumei">
+          <p>
+            さあ　どんな　すがたに　しんかするかな？<br>
+            おえかき　してみよう！！
+          </p><br>
+          <p>
+            ボタンを　おしたら　おえかき　スタート！<br>
+            じゅんびが　できたら　スタートボタンを　おしてね！
+          </p>
+        </div>
+
+        <!-- ボタンおみくじ終了 -->
+
+        <!-- ボタンを押してタイマースタートコーナー -->
+        <audio loop src="image/進化.wav" id="rev" ></audio>
+        <button id="start" style="width: 300px; height: 60px; font-size: 1.8rem; margin: 30px auto; display: flex; justify-content: center; align-items: center;" onClick='start()'>スタート</button>
+          <div id='idDisplay' style="text-align: center; font-size: 2.4rem; margin-bottom: 30px;"></div>
+          <script>
+          var i = 300; //カウント初期値
+          Display(i);
+          var count = function(){ //カウント表示
+          Display(i--);
+          }
+          function start(){ //スタートボタン押したら起動
+          startButton = document.getElementById('start');
+          var timer = setInterval(function(){
+          count();
+          if(i < 0){
+          clearInterval(timer);
+          Display('TIME UP');
+          }
+          },1000); //動作確認を迅速にするため今だけ０．５秒カウント
+          }
+          function Display(s){
+          let oDisplay = document.getElementById('idDisplay');
+          oDisplay.innerText = s;
+          }
+          </script>
+        <!-- タイマー終了 -->
+        <div class="draw">
+          <p style="margin-bottom: 20px;">お絵かきアプリ</p>
+          <canvas
+            id="draw-area"
+            width="800px"
+            height="400px"
+            style="border: 1px solid #000000;"></canvas>
+          <div>
+            <button id="clear-button">全消し</button>
+          </div>
+        </div>
+        <script src="./main.js"></script>
+
+        <div class="end">
+          <p>
+          じょうずに　かけたかな？
+          </p>
+        </div>
+
+        <!-- yes?no?ボタンでテキスト出現JS -->
+        <div class="yesno">
+          <button class="btny">うん！！</button>
+          <button class="btnn">じしんがない</button>
+        </div>
+
+        <div class="ouen">
+          <h3></h3>
+        </div>
+
+        <p class="setumei">
+          かけた　ポケモンを　おくってね<br>
+          オリジナルイラストにできるよ
+        </p>
+        <div class="upload btn">
+          <input type="file" name="example" accept="image/jpeg, image/png">
+        </div>
+
+        <div class="twitter">
+          <a href="https://twitter.com/intent/tweet?button_hashtag=もしもイーブイ！？&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #もしもイーブイ！？</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <!-- 終わり -->
+
+        <!-- 音声認識の遊び -->
+
+        <!-- <button id="start-btn">start</button>
+<button id="stop-btn">stop</button>
+<div id="result-div"></div>
+
+<script>
+  const startBtn = document.querySelector('#start-btn');
+  const stopBtn = document.querySelector('#stop-btn');
+  const resultDiv = document.querySelector('#result-div');
+
+  SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
+  let recognition = new SpeechRecognition();
+
+  recognition.lang = 'ja-JP';
+  recognition.interimResults = true;
+  recognition.continuous = true;
+
+  let finalTranscript = ''; // 確定した(黒の)認識結果
+
+  recognition.onresult = (event) => {
+    let interimTranscript = ''; // 暫定(灰色)の認識結果
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      let transcript = event.results[i][0].transcript;
+      if (event.results[i].isFinal) {
+        finalTranscript += transcript;
+      } else {
+        interimTranscript = transcript;
+      }
+    }
+    resultDiv.innerHTML = finalTranscript + '<i style="color:#ddd;">' + interimTranscript + '</i>';
+  }
+
+  startBtn.onclick = () => {
+    recognition.start();
+  }
+  stopBtn.onclick = () => {
+    recognition.stop();
+  }
+</script> -->
+
+<!-- 音声認識終わり -->
+
+    </main>
+
+    <footer class="footer">
+        <small>copyrights 2022 Pokewaki All RIghts Reserved.</small>           
+    </footer>
+
+    <!-- このコメントの行より下にjsフォルダのtest.jsを読み込みましょう🤗 1.授業でやります!-->
+    <!-- 授業でやる箇所 ↓-->
+    <!-- jQueryはJSファイルの上に書く！！ ↓-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/iv.js"></script>
+    <!-- 授業でやる箇所 ↑-->
+  </body>
+</html>

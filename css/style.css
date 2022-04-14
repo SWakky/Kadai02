@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/*共通部分*/
+
+    .html{
+        font-size: 62.5%;
+    }
+
+
+    .body{
+        color: #222222;
+        font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+        font-size: 1.8rem;
+        line-height: 50%;
+        width: 1440px;
+    }
+
+.a {
+    width: 200px;
+    height: 100px;
+    color: orange;
+}
+
+/* ヘッダー */
+
+.h1 {
+    font-size: 4.8rem;
+}
+
+.header {
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+}
+
+.title {
+    text-align: center;
+    max-width: 100%;
+}
+
+.headiv {
+    height: 100px;
+}
+
+/* ボディー～説明 */
+
+.setumei {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+    line-height: 2.0;
+}
+.setumei2 {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.zukanblock {
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.zukan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.zbtn {
+    border: none;
+    background: transparent;
+}
+
+.zbtn:hover{
+    transform: scale(1.3);
+}
+
+.zbtna {
+    border: none;
+    background: transparent;
+}
+
+.zbtna:hover{
+    transform: scale(1.3);
+}
+
+.zbtnb {
+    border: none;
+    background: transparent;
+}
+
+.zbtnb:hover{
+    transform: scale(1.3);
+}
+
+.zbtnc {
+    border: none;
+    background: transparent;
+}
+
+.zbtnc:hover{
+    transform: scale(1.3);
+}
+
+.zbtnd {
+    border: none;
+    background: transparent;
+}
+
+.zbtnd:hover{
+    transform: scale(1.3);
+}
+
+.zbtne {
+    border: none;
+    background: transparent;
+}
+
+.zbtne:hover{
+    transform: scale(1.3);
+}
+
+.zbtnf {
+    border: none;
+    background: transparent;
+}
+
+.zbtnf:hover{
+    transform: scale(1.3);
+}
+
+.zbtng {
+    border: none;
+    background: transparent;
+}
+
+.zbtng:hover{
+    transform: scale(1.3);
+}
+
+.zbtnh {
+    border: none;
+    background: transparent;
+}
+
+.zbtnh:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+/* 引っ越しスライダー */
+
+.hikkoshi {
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hikkoshi img {
+        width: auto;
+        height: 100%;
+    }
+
+
+@keyframes slide1 {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+   
+  @keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  .hikkoshi img:first-child {
+    animation: loop 50s -25s linear infinite;
+  }
+  
+  .hikkoshi img:last-child {
+    animation: loop2 50s linear infinite;
+  }
+
+/* 引っ越し背景とボタン */
+
+.randomtext {
+    max-width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 300px;
+    height: 60px;
+    font-size: 1.8rem;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.randomhaikei {
+    width: 100%;
+    background-image: url(image/sougen.jpg);
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: red;
+}
+
+/* お絵かきエリア */
+
+.draw {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.upload {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.twitter {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* エンディング */
+
+.end {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.yesno {
+    gap: 50px;
+    display: flex;
+}
+
+.btny {
+    width: 300px;
+    height: 60px;
+    font-size: 1.8rem;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btny:hover{
+    transform: scale(1.1);
+}
+
+.btnn {
+    width: 300px;
+    height: 60px;
+    font-size: 1.8rem;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnn:hover{
+    transform: scale(1.1);
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*フッター*/
+.footer{
+    background-color: antiquewhite;
+    color: #222222;
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
+}
